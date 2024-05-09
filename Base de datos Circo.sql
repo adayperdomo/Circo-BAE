@@ -33,7 +33,8 @@ create table pista(
 )engine = innoDB;
 
 create table animal (
-	tipo varchar (45) not null,
+	
+    tipo varchar (45) not null,
     nombre varchar(45) not null,
     peso varchar (45) not null,
     estatura varchar(45) not null,
@@ -100,6 +101,10 @@ INSERT INTO artista (DNI, nombre, apellidos, profesion) VALUES ('23456789F', 'Ma
 INSERT INTO artista (DNI, nombre, apellidos, profesion) VALUES ('34567890G', 'Charles', 'Darwin', 'trapecistas');
 INSERT INTO artista (DNI, nombre, apellidos, profesion) VALUES ('45678901H', 'Isaac', 'Newton', 'trapecistas');
 
+INSERT INTO pista (aforo, nombre) VALUES (500,'Pista de la Selva');
+INSERT INTO pista (aforo, nombre) VALUES (250,'Pista del Ártico');
+INSERT INTO pista (aforo, nombre) VALUES (750,'Pista de la Sabana');
+
 INSERT INTO animal (tipo, nombre, peso, estatura, nombre_pista, nombre_atraccion) VALUES ('Mono', 'Chita', '20 kg', '50 cm', 'Pista de la Selva', 'domador de monos');
 INSERT INTO animal (tipo, nombre, peso, estatura, nombre_pista, nombre_atraccion) VALUES ('Mono', 'Rafiki', '18 kg', '45 cm', 'Pista de la Selva', 'domador de monos');
 INSERT INTO animal (tipo, nombre, peso, estatura, nombre_pista, nombre_atraccion) VALUES ('León', 'Simba', '180 kg', '120 cm', 'Pista de la Sabana', 'domador de leones');
@@ -108,6 +113,7 @@ INSERT INTO animal (tipo, nombre, peso, estatura, nombre_pista, nombre_atraccion
 INSERT INTO animal (tipo, nombre, peso, estatura, nombre_pista, nombre_atraccion) VALUES ('Foca', 'Luna', '110 kg', '95 cm', 'Pista del Ártico', 'domador de focas');
 INSERT INTO animal (tipo, nombre, peso, estatura, nombre_pista, nombre_atraccion) VALUES ('Elefante', 'Dumbo', '5000 kg', '300 cm', 'Pista de la Selva', 'domador de elefantes');
 INSERT INTO animal (tipo, nombre, peso, estatura, nombre_pista, nombre_atraccion) VALUES ('Elefante', 'Babar', '4800 kg', '290 cm', 'Pista de la Selva', 'domador de elefantes');
+
 
 
 
